@@ -3,27 +3,27 @@ from student import Student
 
 
 def validate_age(age):
-    """Проверка ввода возраста (пункт 79)."""
+    """Проверка ввода возраста"""
     if not isinstance(age, int) or age < 14 or age > 100:
         raise ValueError("Возраст должен быть целым числом от 14 до 100.")
     return True
 
 
 def validate_grade(grade):
-    """Проверка ввода оценки (пункт 79)."""
+    """Проверка ввода оценки"""
     if not isinstance(grade, int) or grade < 0 or grade > 100:
         raise ValueError("Оценка должна быть целым числом от 0 до 100.")
     return True
 
 
 def add_student(students, student):
-    """Добавить нового студента (пункт 74)."""
+    """Добавить нового студента"""
     students.append(student)
     print(f"Студент '{student.name}' успешно добавлен.")
 
 
 def delete_student(students, name):
-    """Удалить студента по имени (пункт 75)."""
+    """Удалить студента по имени"""
     for s in students:
         if s.name.lower() == name.lower():
             students.remove(s)
@@ -33,7 +33,7 @@ def delete_student(students, name):
 
 
 def search_by_group(students, group):
-    """Поиск студентов по группе (пункт 76)."""
+    """Поиск студентов по группе"""
     return [s for s in students if s.group.lower() == group.lower()]
 
 

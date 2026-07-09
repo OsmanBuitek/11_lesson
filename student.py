@@ -1,24 +1,22 @@
-
-
 class Student:
     def __init__(self, name, age, group, grades):
         self.name = name
         self.age = age
         self.group = group
-        self.grades = grades  # список оценок от 0 до 100
+        self.grades = grades  
 
     def average(self):
-        """Средний балл."""
+        """Средний балл"""
         if not self.grades:
             return 0
         return sum(self.grades) / len(self.grades)
 
     def is_passed(self):
-        """Возвращает True, если средний балл >= 50 (пункт 77)."""
+        """Возвращает True, если средний балл >= 50"""
         return self.average() >= 50
 
     def get_status(self):
-        """Возвращает статус студента (пункт 78)."""
+        """Возвращает статус студента"""
         avg = self.average()
         if avg >= 85:
             return "Отличник"
