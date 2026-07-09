@@ -11,7 +11,6 @@
 from student import Student
 from utils import add_student, delete_student, search_by_group, input_student
 
-# Начальные данные
 students = [
     Student("Алия Сейткали",      19, "ИС-21", [90, 85, 88, 92]),
     Student("Данияр Ахметов",     20, "ИС-21", [60, 55, 70, 65]),
